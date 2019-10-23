@@ -1,0 +1,13 @@
+{
+  "name": "insipid",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "https://github.com/insipidlight/insipid",
+  "author": "insipidlight@gmail.com <insipidlight@gmail.com>",
+  "license": "All Rights Reserved",
+  "private": true,
+  "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4"
+  }
+}
