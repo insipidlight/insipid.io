@@ -2,10 +2,9 @@ html {
   background: rgb(255, 138, 134);
   background: linear-gradient(160deg, rgba(255, 138, 134, 1) 0%, rgba(158, 0, 255, 1) 100%);
   background-attachment: fixed;
-}
-
-:root {
-  font-size: calc(12px + 1vw)
+  /* font-size: calc(12px + 1vw); */
+  font-size: 16px;
+  font-family: 'Merriweather', serif;
 }
 
 :link,
@@ -22,29 +21,29 @@ test {
 }
 
 .fab {
-  margin: 10px 5px;
-  padding: 5px;
+  font-size: 3em !important;
+  margin: 0.5em;
   text-decoration: none !important;
 }
 
 .fab:hover {
-  color: #777777;
+  opacity: 0.6;
 }
 
 #banner {
-  margin: 10vw 5vw;
+  margin-top: 20vh;
+  margin-inline: 2vw;
+  padding-inline: 4vw;
 }
 
 #name {
   align-content: flex-end;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.15);
   box-sizing: border-box;
-  font-size: 6em;
+  font-size: 7em;
+  padding: 2rem;
   line-height: 0.9;
   text-align: left;
-  /* height: 60%; */
-  /* background-color: #fde4e428; */
-  /* align-content: flex-end; */
 }
 
 /* .row {
@@ -57,4 +56,20 @@ test {
   text-align: center;
 } */
 
-@media (max-width: 500px) {}
+@media all and (min-width: 1200px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+@media all and (min-width: 720px) and (max-width: 1199px) {
+  body {
+    font-size: calc(12px + 0.5vw);
+  }
+}
+
+@media all and (max-width: 719px) {
+  #name {
+    font-size: calc(10px + 10vw);
+  }
+}
