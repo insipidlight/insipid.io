@@ -1,0 +1,38 @@
+:root {
+    margin: 25px;
+    padding: 50px;
+}
+
+html {
+    background-color: #7741d8;
+}
+h1 {
+    color: #ffffff;
+    text-align: center;
+}
+
+#banner {
+    background-color: rgba(255, 255, 255, 0.452);
+    min-height: 50vh;
+    font-size: 5em;
+    text-align: center;
+    align-content: flex-end;
+    box-sizing: border-box;
+    /* height: 60%; */
+    /* background-color: #fde4e428; */
+    /* align-content: flex-end; */
+}
+
+#links {
+    column-gap: 1em;
+    justify-content: center;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.row > div {
+    padding: 5px;
+    text-align: center;
+}
