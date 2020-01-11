@@ -1,38 +1,60 @@
-:root {
-    margin: 25px;
-    padding: 50px;
+html {
+  background: rgb(255, 138, 134);
+  background: linear-gradient(160deg, rgba(255, 138, 134, 1) 0%, rgba(158, 0, 255, 1) 100%);
+  background-attachment: fixed;
 }
 
-html {
-    background-color: #7741d8;
+:root {
+  font-size: calc(12px + 1vw)
 }
-h1 {
-    color: #ffffff;
-    text-align: center;
+
+:link,
+:visited {
+  color: #000000;
+}
+
+::selection {
+  background-color: #7a33ff;
+}
+
+test {
+  text-decoration: wavy underline #000000 2px;
+}
+
+.fab {
+  margin: 10px 5px;
+  padding: 5px;
+  text-decoration: none !important;
+}
+
+.fab:hover {
+  color: #777777;
 }
 
 #banner {
-    background-color: rgba(255, 255, 255, 0.452);
-    min-height: 50vh;
-    font-size: 5em;
-    text-align: center;
-    align-content: flex-end;
-    box-sizing: border-box;
-    /* height: 60%; */
-    /* background-color: #fde4e428; */
-    /* align-content: flex-end; */
+  margin: 10vw 5vw;
 }
 
-#links {
-    column-gap: 1em;
-    justify-content: center;
+#name {
+  align-content: flex-end;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-sizing: border-box;
+  font-size: 6em;
+  line-height: 0.9;
+  text-align: left;
+  /* height: 60%; */
+  /* background-color: #fde4e428; */
+  /* align-content: flex-end; */
 }
 
-.row {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+/* .row {
+  display: grid;
+  grid-template-columns: repeat(3, 5em);
 }
-.row > div {
-    padding: 5px;
-    text-align: center;
-}
+
+.row>div {
+  padding: 5px;
+  text-align: center;
+} */
+
+@media (max-width: 500px) {}
