@@ -1,10 +1,76 @@
 html {
-  background: rgb(255, 138, 134);
-  background: linear-gradient(160deg, rgba(255, 138, 134, 1) 0%, rgba(158, 0, 255, 1) 100%);
+  z-index: 1;
+  
+  background: linear-gradient(347.47deg, #FFAFBD 10.38%, #FFC3A0 85.6%);
   background-attachment: fixed;
-  /* font-size: calc(12px + 1vw); */
-  font-size: 16px;
-  font-family: 'Merriweather', serif;
+  
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#banner {
+  position: absolute;
+  margin-left: 12vw;
+  
+  top: 20vh;
+  height: 146px;
+}
+
+#name {
+  margin: 0px 5px;
+  font-size: 5em;
+  font-weight: 400;
+}
+
+#social {
+  left: 170px;
+  /* float: left; */
+}
+
+#social .fab {
+  padding: 0 1vw;
+  /* color: red; */
+  text-decoration: none !important;
+}
+
+#social .fab:hover {
+  opacity: 0.6;
+}
+
+@media all and (min-width: 1200px) {
+  body {
+    font-size: 18px;
+  }
+  .fab {
+    font-size: 5vw;
+  }
+}
+
+@media all and (min-width: 720px) and (max-width: 1199px) {
+  body {
+    font-size: calc(12px + 0.5vw);
+  }
+  .fab {
+    font-size: 4vw;
+  }
+}
+
+@media all and (max-width: 719px) {
+  #name {
+    font-size: calc(10px + 10vw);
+  }
+  .fab {
+    font-size: 2em;
+  }
 }
 
 :link,
@@ -13,63 +79,9 @@ html {
 }
 
 ::selection {
-  background-color: #7a33ff;
+  background-color: #bbbbbb;
 }
 
-test {
+/* test {
   text-decoration: wavy underline #000000 2px;
-}
-
-.fab {
-  font-size: 3em !important;
-  margin: 0.5em;
-  text-decoration: none !important;
-}
-
-.fab:hover {
-  opacity: 0.6;
-}
-
-#banner {
-  margin-top: 20vh;
-  margin-inline: 2vw;
-  padding-inline: 4vw;
-}
-
-#name {
-  align-content: flex-end;
-  background-color: rgba(255, 255, 255, 0.15);
-  box-sizing: border-box;
-  font-size: 7em;
-  padding: 2rem;
-  line-height: 0.9;
-  text-align: left;
-}
-
-/* .row {
-  display: grid;
-  grid-template-columns: repeat(3, 5em);
-}
-
-.row>div {
-  padding: 5px;
-  text-align: center;
 } */
-
-@media all and (min-width: 1200px) {
-  body {
-    font-size: 18px;
-  }
-}
-
-@media all and (min-width: 720px) and (max-width: 1199px) {
-  body {
-    font-size: calc(12px + 0.5vw);
-  }
-}
-
-@media all and (max-width: 719px) {
-  #name {
-    font-size: calc(10px + 10vw);
-  }
-}
