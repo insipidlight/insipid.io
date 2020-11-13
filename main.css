@@ -26,24 +26,27 @@ html {
 }
 
 #name {
-  margin: 0px 5px;
   font-size: 5em;
   font-weight: 400;
 }
 
-#social {
-  left: 170px;
-  /* float: left; */
+.row {
+  display: flex;
+}
+
+.row > *:not(:first-child) {
+  margin-left: 2vw;
 }
 
 #social .fab {
-  padding: 0 1vw;
-  /* color: red; */
+  font-size: 4rem;
+  padding: 1vw 0;
+  opacity: 0.6;
   text-decoration: none !important;
 }
 
 #social .fab:hover {
-  opacity: 0.6;
+  opacity: 1.0;
 }
 
 @media all and (min-width: 1200px) {
