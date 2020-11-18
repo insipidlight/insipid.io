@@ -1,6 +1,6 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/bf3124cd-fb54-4bf5-9e82-c6edeb8d727b/deploy-status)](https://app.netlify.com/sites/wonderful-bartik-db7a1f/deploys)
 
-# Hi there 👋
+# Hi 👋
 If you've stumbled across my page... it's pretty clear that I'm not *that* active on GitHub. But if I'm qualified to post anything, then it's this 😊
 
 This site is an ongoing project–maybe it'll have some React, experimental CSS (some stuff might break), and tests for widgets.
